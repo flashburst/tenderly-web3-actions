@@ -1,0 +1,21 @@
+account_id: ""
+actions:
+  varun/project:
+    runtime: v1
+    sources: actions
+    specs:
+      incrementTransactions:
+        description: Transaction that produced Increment on EvenCounter contract.
+        function: hello:helloWorldFn
+        trigger:
+          type: transaction
+          transaction:
+            filters:
+              - eventEmitted:
+                  contract:
+                    address: 0x31399e94f341bc03feac865c81cf458c381121db
+                  name: Increment
+                network: 97
+            status:
+              - mined
+project_slug: ""
