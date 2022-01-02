@@ -1,3 +1,5 @@
+// const ethers = require("ethers")
+
 // Function is later referenced with this name
 const helloWorldFn = async (context, event) => {
     // Log so we can later see what's available in payload
